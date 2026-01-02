@@ -204,7 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const voucherModalDescEl = document.getElementById("voucherModalDesc");
   const voucherModalListEl = document.getElementById("voucherModalList");
 
-  document.querySelectorAll(".voucher-btn").forEach(btn => {
+  document.querySelectorAll(".voucher-card").forEach(btn => {
     btn.addEventListener("click", () => {
 
       const title = btn.dataset.title;
