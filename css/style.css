@@ -1009,3 +1009,12 @@ button {
   border-radius: 0.5rem;
   text-decoration: none;
 }
+.voucher-card {
+  cursor: pointer;
+}
+
+.voucher-card:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+}
+
