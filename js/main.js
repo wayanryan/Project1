@@ -194,3 +194,45 @@ modal.addEventListener('click', e => {
     modal.classList.remove('active');
   }
 });
+
+/* VOUCHER MODAL */
+document.addEventListener("DOMContentLoaded", () => {
+
+  const voucherModalEl = document.getElementById("voucherModal");
+  const voucherModalCloseEl = document.getElementById("voucherModalClose");
+  const voucherModalTitleEl = document.getElementById("voucherModalTitle");
+  const voucherModalDescEl = document.getElementById("voucherModalDesc");
+  const voucherModalListEl = document.getElementById("voucherModalList");
+
+  document.querySelectorAll(".voucher-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+
+      const title = btn.dataset.title;
+      const desc = btn.dataset.desc;
+      const details = btn.dataset.details.split(",");
+
+      voucherModalTitleEl.textContent = title;
+      voucherModalDescEl.textContent = desc;
+
+      voucherModalListEl.innerHTML = "";
+      details.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = item;
+        voucherModalListEl.appendChild(li);
+      });
+
+      voucherModalEl.classList.add("show");
+    });
+  });
+
+  voucherModalCloseEl.addEventListener("click", () => {
+    voucherModalEl.classList.remove("show");
+  });
+
+  voucherModalEl.addEventListener("click", e => {
+    if (e.target === voucherModalEl) {
+      voucherModalEl.classList.remove("show");
+    }
+  });
+
+});
