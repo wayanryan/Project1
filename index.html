@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Membership Landing Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel='stylesheet' href='https://assets.codepen.io/7773162/swiper-bundle.min.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css'>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <img src="images/logo.png" style="width: 65px; height: 65px; " alt="" class="nav__logo">
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#home" class="nav__link active-link">Home</a>
+        </li>
+        <li class="nav__item">
+          <a href="#tier" class="nav__link">Tier</a>
+        </li>
+        <li class="nav__item">
+          <a href="form.html" class="nav__link">Regristration</a>
+        </li>
+      </ul>
+      <div class="nav__close" id="nav-close">
+        <i class='bx bx-x'></i>
+      </div>
+      <img src="https://assets.codepen.io/7773162/nav-img.png" alt="" class="nav__img">
+    </div>
+    <div class="nav__toggle" id="nav-toggle">
+      <i class='bx bx-grid-alt'></i>
+    </div>
+  </nav>
+</header>
+<main class="main">
+  <!-- HOME -->
+  <section class="home container" id="home">
+    <div class="swiper home-swiper">
+      <div class="swiper-wrapper">
+        <!-- HOME SLIDER 1 -->
+        <section class="swiper-slide">
+          <div class="home__content grid">
+            <div class="home__group">
+              <img src="images/hero.jpg" alt="" class="home__img">
+              <div class="home__indicator"></div>
+              <div class="home__details-img">
+                <h4 class="home__details-title">Exclusive Membership</h4>
+                <span class="home__details-subtitle">Upgrade Your Experience</span>
+              </div>
+            </div>
+            <div class="home__data">
+              <h3 class="home__subtitle">Membership Program</h3>
+              <h1 class="home__title">UPGRADE <br> YOUR <br> EXPERIENCE </h1>
+              <p class="home__description">Akses fitur premium dan pengalaman yang lebih optimal dalam <strong>membership. </strong></p>
+              <div class="home__buttons">
+                <a href="form.html" class="book--now">
+                  Join Now
+                </a>
+                <a href="#" class="button--link button--flex go-next-slide">
+                  Track Record <i class='bx bx-right-arrow-alt button__icon'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- HOME SLIDER 2 -->
+        <section class="swiper-slide">
+          <div class="home__content grid">
+            <div class="home__group">
+              <img src="images/herotier.jpg" alt="" class="home__img">
+              <div class="home__indicator"></div>
+              <div class="home__details-img">
+                <h4 class="home__details-title">Membership Plans</h4>
+                <span class="home__details-subtitle">Choose What Fits You</span>
+              </div>
+            </div>
+            <div class="home__data">
+              <h3 class="home__subtitle">Available Tiers</h3>
+              <h1 class="home__title">  BASIC <br> PREMIUM <br> VIP </h1>
+              <p class="home__description">Pilih paket tier yang sesuai dengan kebutuhanamu.</p>
+              <div class="home__buttons">
+                <a href="form.html" class="book--now">
+                  Join Now
+                </a>
+                 <a href="#" class="button--link button--flex go-next-slide">
+                  Track Record <i class='bx bx-right-arrow-alt button__icon'></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- HOME SLIDER 3 -->
+        <section class="swiper-slide">
+          <div class="home__content grid">
+            <div class="home__group">
+              <img src="images/hero3.jpg" alt="" class="home__img">
+              <div class="home__indicator"></div>
+              <div class="home__details-img">
+                <h4 class="home__details-title">Why Join</h4>
+                <span class="home__details-subtitle">More Value</span>
+              </div>
+            </div>
+            <div class="home__data">
+              <h3 class="pumpkin__subtitle">Membership Benefits</h3>
+              <h1 class="home__title"> WORK <br> SMARTER <br> DAILY </h1>
+              <p class="home__description"> Nikmati fitur eksklusif, update premium, dan dukungan yang lebih cepat.</p>
+              <div class="home__buttons">
+               <a href="form.html" class="book--now">
+                  Join Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- tier -->
+ <section class="section tier" id="tier">
+  <h2 class="section__title">Tier <br> Membership</h2>
+
+  <div class="tier__container container grid">
+    <div class="tier__data"
+      data-title="Basic Tier"
+      data-price="Rp 50.000 / bulan"
+      data-img="images/basic.png"
+      data-benefits="Akses dasar,Voucher bulanan,Support email">
+      <img src="images/basic.png" alt="" class="tier__img">
+      <h3 class="tier__title">Basic Tier</h3>
+      <p class="tier__description">Rp 50.000/bulan <br> 3 benefits</p>
+    </div>
+
+    <div class="tier__data tier__popular"
+      data-title="Premium Tier"
+      data-price="Rp 150.000 / bulan"
+      data-img="images/premium.png"
+      data-benefits="Semua Basic,Diskon eksklusif,Priority support,Free voucher,Early access">
+       <span class="tier__badge">Most Popular</span>
+      <img src="images/premium.png" alt="" class="tier__img">
+      <h3 class="tier__title">Premium Tier</h3>
+      <p class="tier__description">Rp 150.000/bulan <br> 5 benefits</p>
+    </div>
+
+
+    <div class="tier__data"
+      data-title="VIP Tier"
+      data-price="Rp 300.000 / bulan"
+      data-img="images/vip.png"
+      data-benefits="Semua Premium,VIP badge,Personal support,Unlimited voucher,Event khusus">
+      <img src="images/vip.png" alt="" class="tier__img">
+      <h3 class="tier__title">VIP Tier</h3>
+      <p class="tier__description">Rp 300.000/bulan <br> 8 benefits</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Modal -->
+<div class="modal" id="tierModal">
+  <div class="modal__content">
+    <span class="modal__close" id="closeModal">&times;</span>
+
+    <img id="modalImg" src="" alt="" class="modal__img">
+    <h3 id="modalTitle"></h3>
+    <p id="modalPrice"></p>
+    <ul id="modalBenefits"></ul>
+  </div>
+</div>
+
+<!-- Voucher-->
+  <section class="section new" id="new">
+    <h2 class="section__title">Voucher</h2>
+    <div class="new__container container">
+      <div class="swiper new-swiper">
+        <div class="swiper-wrapper">
+          <div class="new__content swiper-slide">
+            <img src="images/hotel.jpg" alt="" class="new__img">
+            <h3 class="new__title">Room Discount</h3>
+            <span class="new__subtitle">Up to 30% Off</span>
+            <div class="new__prices">
+              <span class="new__price">IDR 700K</span>
+              <span class="new__discount">IDR 1.000K</span>
+            </div>
+            <button 
+            class="button new__button voucher-btn"
+            data-title="Room Discount"
+            data-desc="Nikmati potongan harga kamar hotel hingga 30% untuk semua tipe kamar."
+            data-details="Valid setiap hari,Min. 1 malam,Maks. 2 kamar,Member only">
+            <i class='bx bx-detail new__icon'></i>
+          </button>
+
+          </div>
+          <div class="new__content swiper-slide">
+            <div class="new__tag">
+              <img src="https://assets.codepen.io/7773162/svgviewer-output+%286%29_1.svg" alt="" />
+            </div>
+            <img src="images/breakfast.jpg" alt="" class="new__img">
+            <h3 class="new__title">Free Breakfast</h3>
+            <span class="new__subtitle">For 2 Persons</span>
+            <div class="new__prices">
+              <span class="new__price">Included</span>
+              <span class="new__discount">IDR 200K</span>
+            </div>
+             <button 
+            class="button new__button voucher-btn"
+            data-title="Complimentary Breakfast"
+            data-desc="Nikmati sarapan gratis untuk dua orang dengan pilihan menu terbaik dari hotel kami."
+            data-details="Untuk 2 orang,Berlaku setiap hari,Jam 06.00–10.00,Member only">
+            <i class='bx bx-detail new__icon'></i>
+          </button>
+
+          </div>
+          <div class="new__content swiper-slide">
+            <img src="images/spa.jpg" alt="" class="new__img">
+            <h3 class="new__title">Spa & Wellness</h3>
+            <span class="new__subtitle">Relax Package</span>
+            <div class="new__prices">
+              <span class="new__price">IDR 350K</span>
+              <span class="new__discount">IDR 500K</span>
+            </div>
+           <button 
+          class="button new__button voucher-btn"
+          data-title="Spa & Wellness"
+          data-desc="Nikmati pengalaman relaksasi dengan perawatan spa premium untuk menyegarkan tubuh dan pikiran."
+          data-details="Perawatan 60 menit,Reservasi diperlukan,Berlaku setiap hari,Member only">
+          <i class='bx bx-detail new__icon'></i>
+        </button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal voucer -->
+<div class="voucher-modal" id="voucherModal">
+  <div class="voucher-modal__content">
+    <span class="voucher-modal__close" id="voucherModalClose">&times;</span>
+
+    <h3 id="voucherModalTitle">Voucher Title</h3>
+    <p id="voucherModalDesc">Voucher description here</p>
+
+    <ul class="voucher-modal__list" id="voucherModalList">
+      <!-- diisi dari JS -->
+    </ul>
+
+    <a href="form.html" class="voucher-modal__cta">Use Voucher</a>
+  </div>
+</div>
+
+
+</main>
+<!-- SCROLL UP -->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+</a>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js'></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
