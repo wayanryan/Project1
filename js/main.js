@@ -118,29 +118,36 @@ let newSwiper = new Swiper(".new-swiper", {
 
 
 
-/* SCROLL SECTIONS ACTIVE LINK */
+/* SCROLL SECTIONS ACTIVE LINK (FIX OVERLAP) */
 const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav__menu a[href^='#']");
 
 function scrollActive() {
-  const scrollY = window.pageYOffset;
+  const scrollMiddle = window.scrollY + window.innerHeight / 2;
 
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute("id");
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
-        .classList.remove("active-link");
+    const link = document.querySelector(
+      `.nav__menu a[href="#${sectionId}"]`
+    );
+
+    if (!link) return;
+
+    if (
+      scrollMiddle >= sectionTop &&
+      scrollMiddle < sectionTop + sectionHeight
+    ) {
+      navLinks.forEach(l => l.classList.remove("active-link"));
+      link.classList.add("active-link");
     }
   });
 }
+
 window.addEventListener("scroll", scrollActive);
+window.addEventListener("load", scrollActive);
 
 /* SHOW SCROLL UP */
 function scrollUp() {
