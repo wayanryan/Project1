@@ -15,7 +15,6 @@ Project ini dibuat sebagai latihan frontend dan implementasi workflow Git profes
 - Responsive design (desktop & mobile)
 - Interactive button & modal popup
 - Clean UI with modern color palette
-- Custom domain with GitHub Pages
 
 ---
 
